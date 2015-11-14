@@ -1,0 +1,59 @@
+1.Set up your repo in your local machine
+---------------------------------------------
+To clone your forked repository from github onto your local machine:
+
+$git clone < the URL of your forked repo>
+$git remote -v  # check what you have on your local machine
+$git remote rename origin <name you want to change into>  #change your fork name 
+$git remote add origin <https://github.com/amandazhang/STAT243FinalProject.git>
+
+$git remote -v  #Now you should be able to see four lines, two of them be the 
+                 repo of your forked one, other two named 'origin' be the repo
+                 of origin master
+
+
+2.Version control part: Do code review on github
+---------------------------------------------------
+In order to keep your master branch of your forked repository clean, all of 
+your works should be done in a branch other than master.
+
+
+Below is the example:
+
+*** I want to work on the first part of our module. I would first:
+
+<Be on the master branch:>
+
+$git pull origin master  #pull any changes from github of origin repo onto your local 
+
+$git push <name you choose for your repo> master #push your local changes to your remote github to make your remote git(forked one) updated with origin repo.
+
+*** Then create a new branch to save your works:
+                              
+$git branch <name you want for your new branch, any name but 'master', eg. 'module'>
+
+$git branch  #you could use this to check what branches you have
+
+$git checkout <name of branch you want to switch to, eg. 'module'>  #you would switch to 'module' branch
+
+*** Now you can do your works under 'module' branch.
+*** To save your work onto your github:
+
+$git add 
+$git commit -m ""
+$git push <your forked repo name> <the branch name you're working on>
+
+*** Now you can review your work on your github! 
+
+*** Remember to switch to your new branch other than master on github to see the commit you made
+
+
+3. Create pull request
+----------------------------------
+
+We've talked about this after class today, tutorials are better than my explanation...
+
+
+
+I think that's all for now!
+
